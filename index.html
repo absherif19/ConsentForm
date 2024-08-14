@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <title>PSI - Consent Form</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-header">
+        <div class="form-logo">
+          <img src="./assets/images/logo.png" alt="PSI Logo" />
+        </div>
+        <h2 class="form-title">Consent form</h2>
+      </div>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="first-name">First Name :</label>
+          <div class="input-container">
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="First Name"
+            />
+            <img src="./assets/images/firstname.png" class="input-icon" alt="First Name Icon" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name :</label>
+          <div class="input-container">
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Last Name"
+            />
+            <img src="./assets/images/firstname.png" class="input-icon" alt="Last Name Icon" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <div class="input-container">
+            <input type="email" id="email" name="email" placeholder="Email" />
+            <img src="./assets/images/email.png" class="input-icon" alt="Email Icon" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone-number">Phone Number :</label>
+          <div class="input-container">
+            <input
+              type="tel"
+              id="phone-number"
+              name="phone-number"
+              placeholder="Phone Number"
+            />
+            <img src="./assets/images/phone.png" class="input-icon" alt="Phone Icon" />
+          </div>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="whatsapp-check" name="whatsapp-check" />
+          <label for="whatsapp-check"
+            >Same as WhatsApp number, or <a href="#" id="click-here">CLICK HERE</a> to add your
+            WhatsApp number.</label
+          >
+        </div>
+
+        <div class="form-group" id="whatsapp-number-group" style="display: none;">
+          <label for="whatsapp-number">WhatsApp Number :</label>
+          <div class="input-container">
+            <input
+              type="tel"
+              id="whatsapp-number"
+              name="whatsapp-number"
+              placeholder="WhatsApp Number"
+            />
+            <img src="./assets/images/phone.png" class="input-icon" alt="WhatsApp Icon" />
+          </div>
+        </div>
+        <button type="submit" class="submit-btn" disabled>Submit</button>
+
+        <div class="form-check">
+          <input
+            type="checkbox"
+            id="promotions-check"
+            name="promotions-check"
+          />
+          <label for="promotions-check"
+            >By submitting this form the company can use this information to
+            contact you and send promotions, and offers, through various
+            channels, in line with UAE laws.</label
+          >
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="terms-check" name="terms-check" />
+          <label for="terms-check"
+            >By clicking "Submit," I acknowledge and accept the
+            <a href="#">terms and conditions</a>.</label
+          >
+        </div>
+      </form>
+    </div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
