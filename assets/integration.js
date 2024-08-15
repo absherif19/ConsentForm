@@ -7,6 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const phoneNumberInput = document.getElementById('phone-number');
     const whatsappNumberInput = document.getElementById('whatsapp-number');
 
+    // Use CORS Anywhere proxy URL
+    const corsAnywhere = 'https://cors-anywhere.herokuapp.com/';
+    const apiEndpoint = 'https://integration.psi-crm.com/ExternalApis/UpdateContactConsentStatus';
+    const apiKey = 'ONjViogekmFKvSkFhYNsgQS56WNG08EORGL9QGarF8gl5aObzzBikmJlmo2wHEQ';
+    const isAUH = true;
 
     // Handle form submission
     form.addEventListener('submit', function(event) {
